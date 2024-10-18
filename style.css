@@ -1,23 +1,31 @@
 /* universal selector */
+
 * {
     color: black;
 }
+
+/* type selector */
 
 h1 {
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* class selector */
+
+/* type selector */
 
 h2 {
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* type selector */
+
 p {
     line-height: 1.5em;
 }
+
+/* type selector */
 
 img {
     float: left;
@@ -30,10 +38,13 @@ img {
 }
 
 /* Relational Selector */
+
 section#checklist ol>li{
     margin-left: -300px;
     color: rgb(0, 121, 26);
 }
+
+/* relational selector */
 
 #Leave_no_trace h2, #Leave_no_trace p, ol {
     margin-left: 300px;
