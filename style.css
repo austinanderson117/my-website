@@ -8,7 +8,9 @@
 
 h1 {
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seif;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 
@@ -23,12 +25,16 @@ h2 {
 
 p {
     line-height: 1.5em;
+    padding: 10px;
 }
 
 /* type selector */
 
 img {
     float: left;
+    border: 3px solid black;
+    margin-right: 15px;
+    padding: 5px;
 }
 
 /* id selector */
@@ -40,12 +46,40 @@ img {
 /* Relational Selector */
 
 section#checklist ol>li{
-    margin-left: -300px;
+    margin-left: -200px;
     color: rgb(0, 121, 26);
+    padding: 5px;
 }
 
 /* relational selector */
 
 #Leave_no_trace h2, #Leave_no_trace p, ol {
     margin-left: 300px;
+}
+
+/* adding a gradient to the body background*/
+
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: arial, sans-serif;
+}
+
+/* flexbox layout for a 3 column structure */
+
+#columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+/* Adjust the size of images inside the columns */
+
+#columns img {
+    width: 150px; /* Adjust the width to the desired size */
+    height: auto; /* This maintains the aspect ratio */
 }
