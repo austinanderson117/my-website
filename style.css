@@ -1,74 +1,44 @@
-/* universal selector */
+/* Universal selector */
 
 * {
     color: black;
+    box-sizing: border-box;
 }
 
-/* type selector */
-
-h1 {
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seif;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-
-/* type selector */
-
-h2 {
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* type selector */
-
-p {
-    line-height: 1.5em;
-    padding: 10px;
-}
-
-/* type selector */
-
-img {
-    float: left;
-    border: 3px solid black;
-    margin-right: 15px;
-    padding: 5px;
-}
-
-/* id selector */
-
-#mountaindescription {
-    clear: left;
-}
-
-/* Relational Selector */
-
-section#checklist ol>li{
-    margin-left: -200px;
-    color: rgb(0, 121, 26);
-    padding: 5px;
-}
-
-/* relational selector */
-
-#Leave_no_trace h2, #Leave_no_trace p, ol {
-    margin-left: 300px;
-}
-
-/* adding a gradient to the body background*/
+/* Page layout */
 
 body {
     background: linear-gradient(to right, #e0eafc, #cfdef3);
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* flexbox layout for a 3 column structure */
+/* Header styling */
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox layout for main content */
 
 #columns {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
 }
 
 .column {
@@ -77,9 +47,28 @@ body {
     border: 2px solid #000;
 }
 
-/* Adjust the size of images inside the columns */
+/* Scalable image */
 
-#columns img {
-    width: 150px; /* Adjust the width to the desired size */
-    height: auto; /* This maintains the aspect ratio */
+.scalable-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for responsive design */
+
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #columns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
 }
