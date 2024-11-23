@@ -1,3 +1,5 @@
+peer-reponse.txt
+
 OBJECTIVE: Add a file to the root (top-level) project folder called "peer-response.txt". In this file, copy & paste at least 2 suggestions from your peers for how to improve your website. Next, make these improvements to your website. Finally, in the "peer-response.txt" file, document the specific things you did to improve your website based on the peer feedback.
 
 
