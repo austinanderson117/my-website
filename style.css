@@ -211,3 +211,13 @@ img[src="Photos/trashontrail.jpeg"] {
     color: #000000;
     font-size: 2rem;
 }
+
+/* Forest Background Texture */
+body {
+    background: linear-gradient(rgba(72, 103, 56, 0.8), rgba(106, 105, 105, 0.8)),
+                url('assets/forest-texture.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #083507;
+    line-height: 1.6;
+}
