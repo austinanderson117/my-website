@@ -213,6 +213,7 @@ img[src="Photos/trashontrail.jpeg"] {
 }
 
 /* Forest Background Texture */
+
 body {
     background: linear-gradient(rgba(34, 69, 17, 0.8), rgba(31, 33, 31, 0.8)),
                 url('assets/forest-texture.jpg') no-repeat center center fixed;
@@ -220,4 +221,34 @@ body {
     font-family: Arial, sans-serif;
     color: #0a3509;
     line-height: 1.6;
+}
+
+/* Grid layout for image containers in each section */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 1rem; 
+    margin-top: 1rem;
+}
+
+/* Image styling for consistency */
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+    border: 0.2rem solid #ccc;
+}
+
+/* ensures that image on index is formatted properly */
+
+img[src="Photos/mountain.jpeg"] {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    border: 0.3rem solid black;
+    display: block;
+    margin: 1rem auto;
 }
